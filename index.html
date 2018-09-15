@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>static-comp-3</title>
+</head>
+  <body>
+    <nav class="sidebar-styling">
+      <section class="sidebar">
+        <div class="sidebar-hero-styling">
+          <img class="headshot" img src="images/headshot.jpg" alt="Me">
+          <p class="profile-title">Lindsey Wilhite 
+            <i class="fas fa-angle-down"></i>
+          </p>
+        </div>
+
+        <hr class="profile-pic-divider">
+
+        <div class="sidebar-links">
+          <h6 class="sidebar-title  sidebar-button-padding">Main</h6>
+          <p class="sidebar-home sidebar-link-button sidebar-button-padding"><i class="fas fa-home sidebar-icon"></i> HOME</p>
+          <p class="sidebar-jobs sidebar-link-button sidebar-button-padding"><i class="fas fa-briefcase sidebar-icon"></i>  JOBS</p>
+          <p class="sidebar-resumes sidebar-link-button sidebar-button-padding"><i class="far fa-file sidebar-icon"></i> RESUMES</p>
+          <p class="sidebar-tasks sidebar-link-button sidebar-button-padding"><i class="fas fa-clipboard-list sidebar-icon"></i> TASKS</p>
+          <p class="sidebar-calendar sidebar-link-button  sidebar-button-padding sidebar-bottom-link"><i class="far fa-calendar-alt sidebar-icon"></i> CALENDAR</p>
+        </div>
+
+          <hr class="sidebar-main-divider">
+
+        <div class="sidebar-admin-links">
+          <h6 class="sidebar-title sidebar-button-padding">Admin</h6>
+          <p class="sidebar-users sidebar-link-button sidebar-button-padding"><i class="fas fa-users-cog sidebar-icon"></i> USERS</p>
+          <p class="sidebar-locations sidebar-link-button sidebar-button-padding"><i class="fas fa-map-marker-alt sidebar-icon"></i> LOCATIONS</p>
+          <p class="sidebar-workflows sidebar-link-button sidebar-button-padding"><i class="fas fa-grip-horizontal sidebar-icon"></i> WORKFLOWS</p>
+          <p class="sidebar-job-boards sidebar-link-button sidebar-button-padding"><i class="far fa-newspaper sidebar-icon"></i> JOB BOARDS</p>
+          <p class="sidebar-social sidebar-link-button sidebar-button-padding sidebar-bottom-link"><i class="far fa-comments sidebar-icon"></i> SOCIAL</p>
+        </div>
+
+          <hr class="sidebar-admin-divider">
+
+        <div class="sidebar-checkboxes side-bar-margin">
+          <h6 class="sidebar-title sidebar-button-padding">Categories</h6>
+
+          <div class="checkbox-styling sidebar-button-padding">
+
+            <label class="admin"><input type="checkbox" class="single-checkbox"> Administrative</label>
+
+          </div>
+          <div class="checkbox-styling sidebar-button-padding">
+            <label><input type="checkbox" value="true" class="single-checkbox"> Design</label>
+          </div>
+          <div class="checkbox-styling sidebar-button-padding">
+            <label><input type="checkbox" class="single-checkbox"> Executive</label>
+          </div>
+          <div class="checkbox-styling sidebar-button-padding">
+            <label><input type="checkbox" class="single-checkbox"> Human Resources</label>
+          </div>
+        </div>
+      </section>
+    </nav>
+
+    <section class="main">
+
+      <nav class="navigation">
+      
+        <div class="collapse nav-icon">
+          <i class="fas fa-caret-left"></i>
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="search-styling">
+          <form>
+            <input class="search" type="text" name="search" placeholder="Search for a job, task, or resume...">
+          </form>
+        </div>
+
+        <div class="nav-user-styling nav-icon">
+          <i class="fas fa-user-plus"></i>
+        </div>
+        <div class="address-styling nav-icon">
+          <i class="far fa-address-book"></i>
+        </div>
+        <div class="nav-connections-styling nav-icon">
+          <i class="fas fa-th"></i>
+        </div>
+
+      </nav>
+
+    <section class="header">
+      <p class="Title">Frontend Software Engineer<br>
+      <span class="town">
+      <i class="fas fa-map-marker-alt"></i>Denver, CO
+      </span>
+      <span class="dash">-</span>
+      <span class="preview-post"> Preview This Post<p>
+    </section>
+    <section class="header-buttons-styling">
+      <button class="header-button">
+      <i class="fas fa-circle">
+      </i>OPEN</button>
+      <button class="header-button">
+      <i class="fas fa-bookmark"></i>
+      </button>
+      <button class="header-button">
+      <i class="fas fa-pencil-alt"></i></button>
+      <button class="header-button">
+      <i class="fas fa-hotel"></i>
+      </button>
+    </section>
+
+    <section class="subnavigation-header-links">
+      <p class="subnav-link">SUMMARY</p>
+      <p class="subnav-link">APPLICANTS</p>
+      <p class="subnav-link">JOB BOARD</p>
+      <p class="subnav-link">INTERVIEWS</p>
+      <p class="subnav-link">ACTIVITY</p>
+      <p class="subnav-link">BROADCAST</p>
+      <p class="subnav-link">NOTIFICATIONS</p>
+    </section>
+
+    <section class="graphs">
+      <section class="circle-chart-styling">
+
+        <div class="single-chart">
+          <svg viewbox="0 0 36 36" class="circular-chart teal">
+            <path class="circle-bg"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+            <path class="circle"
+            stroke-dasharray="90, 100"
+          d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+            <text x="18" y="20.35" class="applicants">3,154</text>
+            <text x="11" y="26" class="dial-text">APPLICANTS</text>
+          </svg>
+        </div>
+    
+        <div class="single-chart">
+          <svg viewbox="0 0 36 36" class="circular-chart blue">
+            <path class="circle-bg"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+            <path class="circle"
+            stroke-dasharray="60, 100"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+            <text x="18" y="20.35" class="percentage">1,546</text>
+            <text x="11" y="26" class="dial-text">INTERVIEWS</text>
+          </svg>
+        </div>
+
+        <div class="single-chart">
+          <svg viewbox="0 0 36 36" class="circular-chart plum">
+            <path class="circle-bg"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+            <path class="circle"
+            stroke-dasharray="30, 100"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"/>
+            <text x="18" y="20.35" class="forwards">912</text>
+            <text x="11" y="26" class="dial-text">FORWARDS</text>
+          </svg>
+        </div>
+
+      </section><!-- circle chart styling -->
+
+      <section class="bars">
+      </section>
+    </section><!-- graphs section -->
+
+    <section class="buttons-for-graphs">
+      <button class="totals">TOTALS - Out of 5231 views</button>
+      <button class="applicants-day">APPLICANTS/DAY</button>
+    </section>
+
+    <section class="divider-icon">
+      <hr class="divide-before">
+      <span>
+      <i class="fas fa-chevron-circle-up"></i></i>
+      </span>
+      <hr class="divide-after">
+    </section>
+
+    <div class="jobpost-table">
+    <section class="job-description">
+      <h1 class="job-table-header">
+      <p class="jay-oh-bee">JOB DESCRIPTION</p> 
+      <button class="table-btn edit" type="button" name="edit">EDIT</button>
+      </h1>
+        
+      <table>
+        <tbody class="table-body">
+        <tr>
+          <td class="table-title">POSITION TITLE</td>
+          <td class="table-description">Frontend Software Engineer</td>
+        </tr>
+        <tr>
+          <td class="table-title">LOCATION</td>
+          <td class="table-description">Denver, CO.</td>
+        </tr>
+        <tr>
+          <td class="table-title">EMPLOYMENT TYPE</td>
+          <td class="table-description">Full Time and Remote</td>
+        </tr>
+        <tr>
+          <td class="table-title">EXPERIENCE</td>
+          <td class="table-description">Junior Developer</td>
+        </tr>
+        <tr>
+          <td class="table-title">STATUS</td>
+          <td class="table-description">Open</td>
+        </tr>
+        <tr>
+          <td class="table-title">DESCRIPTION</td>
+          <td class="table-description">
+            Candy canes chocolate carrot cake halvah bonbon topping lemon drops marzipan. Pudding liquorice danish halvah cheesecake. Toffee topping cake lollipop jelly tiramisu soufflé bear claw dessert. Jujubes oat cake tootsie roll. 
+          </td>
+        </tr>
+        <tr>
+          <td class="table-title">HIRING LEAD</td>
+          <td class="table-description photo-box">
+            <img class="stewert-butterfield" src="images/stewert-butterfield.jpg">  <p class="boss-text" alt="Hiring Lead">Mr. Butterfield</p> 
+          </td>
+         </tr>
+         <tr>
+          <td class="table-title">APPROVED SALARY</td>
+          <td class="table-description salary">$75,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  
+    <section class="social-buttons-styling">
+      <article class="social-container">
+        <button class="facebook"type="button">
+        <i class="fab fa-facebook-f">
+        </i>
+        <p class="post-to">Post to Facebook</p>
+        </button>
+        <button class="twitter"type="button">
+        <i class="fab fa-twitter"></i>
+        <p class="post-to">Tweet this Job</p>
+        </button>
+        <button class="linkedin"type="button">
+        <i class="fab fa-linkedin"></i>
+        <p class="post-to">Post to LinkedIn</p>
+        </button>
+      </article>
+  
+      <article class="share">
+        <div class="copy-input">
+          <h2 class="share-title">
+          <i class="fas fa-globe-americas"></i>
+            Link to this Job
+          </h2>
+            <p class="share-text">Tart bonbon tiramisu candy macaroon. Ice-cream danish biscuit donut jelly bearclaw liquorice.</p>
+          <div class="copy-box">
+          <div class="copy-widget">
+            <input class="copy-text" type="text" 
+              placeholder="www.google.com">
+          <button class="copy-btn" type="button">Copy</button>
+          </div>
+          <hr class="social-container-divider">
+          </div>
+          </div>
+          <div class="copy-input">
+            <h2 class="share-title">
+            <i class="fas fa-camera-retro"></i>
+            Use the Button Widget</h2>
+            <p class="share-text">Croissant ice cream tiramisu pastry danish. Brownie halvah croissant bonbon macaroon.</p>
+          <div class="copy-box">
+          <div class="copy-widget">
+            <input class="copy-text" type="text" 
+            placeholder="www.google.com">
+            <button class="copy-btn" type="button">Copy</button>
+          </div>
+          <hr class="social-container-divider">
+          </div>
+          </div>
+          <div class="copy-input">
+            <h2 class="share-title">
+            <i class="fas fa-paper-plane"></i>
+              Upload Resumes by Email
+            </h2>
+            <p class="share-text">Marzipan candy carrot cake danish icing tiramisu jujubes chupa chups carrot cake. 
+            </p>
+            <input class="copy-text-resume" type="text" 
+            placeholder="thetabloom1@gmail.com">
+          </div>
+        </article>
+      </section>
+    </body>
+</html>

@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  display: grid;
+  grid-template-columns: 12em 1fr;
+}
+
+hr {
+  background-color: #3e4c56;
+  height: 2.5px;
+  border: 0px; 
+}
+
+.sidebar {
+  grid-column: 1 / span 1;
+  background-color: #4A5760;
+  height: 100%;
+  color: white;
+}
+
+.sidebar-hero-styling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13px;
+  margin-bottom: 13px;
+}
+
+.headshot {
+  height: 85px;
+  width: 85px;
+  border-radius: 85px;
+  margin: 15px;
+}
+
+.profile-title {
+  font-size: .9em;
+}
+
+.profile-title:hover {
+  color: cyan;
+}
+
+.sidebar-title {
+  font-weight: 400;
+  line-height: 35px;
+  padding-top: 19px;
+  color: lightgrey;
+}
+
+.sidebar-button-padding {
+  padding-left: 20px;
+}
+
+.sidebar-link-button {
+  line-height: 40px;
+  font-size: .8em;
+  color: lightgrey;
+  border-left: 1.5px solid #4a5760;
+}
+
+.sidebar-link-button:hover {
+  background-color: #3a4854;
+  border-left: 1.5px solid cyan;
+  color: white;
+}
+
+.sidebar-icon {
+  padding-right: 5px;
+}
+
+.sidebar-bottom-link {
+  margin-bottom: 16px;
+}
+
+.sidebar-checkboxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-title {
+  font-size: .8em;
+  margin-bottom: 2px;
+}
+
+.checkbox-styling {
+  font-size: .7em;
+  margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -21px;
+    color: lightgrey;
+}
+
+.admin {
+  margin-top: 10px;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    padding: 0 5px 0 23px;
+    vertical-align: middle;
+}
+
+.main {
+  grid-column: 2 / span 1;
+  background-color: orangered;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 5em 1fr 5em 5em 5em;
+  background-color: whitesmoke;
+  height: 75px;
+}
+
+.collapse {
+  grid-column: 1;
+  justify-content: space-between;
+}
+
+.fa-caret-left {
+  color: #41e6fd;
+}
+
+.fa-bars {
+  padding-left: 3px;
+}
+
+.search {
+  grid-column: 2;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('images/searchicon.png');
+  background-position: 10px 28px;
+  background-repeat: no-repeat;
+  padding: 12px 16px 12px 40px;
+  height: 75px;
+}
+
+.search::placeholder {
+  color: #b8baba;
+}
+
+.nav-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px solid grey;
+}
+
+.graphs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.dials-wrapper { 
+}
+
+.dials {
+  grid-column: 1 / span 1;
+  width: 6em;
+  border: 3px solid black;
+}
+
+.single-chart {
+  height: 100px;
+}
+
+.circular-chart {
+  display: block;
+  margin: 2em 1em 1em 1em;
+  max-width: 80%;
+  max-height: 10em;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  animation: progress 1s ease-out forwards;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.teal .circle {
+  stroke: #009688;
+}
+
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+
+.circular-chart.plum .circle {
+  stroke: #8e24aa;
+}
+
+.percentage, .forwards, .applicants {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+.dial-text {
+  font-size: .15em;
+  font-weight: 700;
+}
+
+.bars {
+  grid-column: 2 / span 1;
+  border: 3px solid yellow;
+}
+
+.stewert-butterfield {
+  height: 70px;
+  border-radius: 80px;
+}
