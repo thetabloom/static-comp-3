@@ -40,10 +40,11 @@ hr {
 
 .profile-title {
   font-size: .9em;
+  color: lightgrey;
 }
 
 .profile-title:hover {
-  color: cyan;
+  color: #1d9aed;
 }
 
 .sidebar-title {
@@ -206,6 +207,10 @@ input[type=checkbox] {
   color: #1d9aed;
 }
 
+.preview-post:hover {
+  color: #1bec2b;
+}
+
 .header-buttons-styling {
   grid-column: 3;
   display: flex;
@@ -219,6 +224,11 @@ input[type=checkbox] {
   border-radius: 20px;
   height: 35px;
   border: 1.45px solid #b8baba;
+}
+
+.header-btn:hover {
+  color: white;
+  background-color: #1d9aed;
 }
 
 .header-button-one {
@@ -247,7 +257,7 @@ input[type=checkbox] {
   grid-column: 1;
   display: flex;
   justify-content: space-around;
-  color: grey;
+  color: #4a5760;
   padding-left: 26px;
 }
 
@@ -256,6 +266,7 @@ input[type=checkbox] {
   border-bottom: 3px solid #FFFFFF;
   font-size: .9em;
   line-height: 27px;
+  color: darkgrey;
 }
 
 .single-subnav-link:hover {
@@ -268,16 +279,18 @@ input[type=checkbox] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-top: 2px solid lightgrey;
+  padding-top: 39px;
 }
 
 .circle-chart-styling {
   display: flex;
   flex-flow: row nowrap;
+  padding-left: 30px;
 }
 
 .single-chart {
   width: 33%;
-  justify-content: space-around ;
+  justify-content: space-around;
 }
 
 .circular-chart {
@@ -334,9 +347,9 @@ input[type=checkbox] {
   grid-column: 2 / span 1;
   background-image: url('images/graphbar.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 500px 165px;
   background-origin: content-box;
-  padding-left: 77px;
+  padding-left: 14px;
   background-position: center;
 }
 
@@ -360,9 +373,15 @@ input[type=checkbox] {
   font-weight: 600;
 }
 
+.graph-button:hover {
+  background-color: #1d9aed;
+  color: #FFFFFF;
+}
+
 .page-divider {
   display: grid;
-  grid-template-columns: 1fr 30px 1fr;
+  grid-template-columns: 1fr 37px 1fr;
+  padding-bottom: 30px;
 }
 
 .divider-line-styling {
@@ -374,7 +393,7 @@ input[type=checkbox] {
 
 .divider-line {
   width: 85%;
-  background-color: grey;
+  background-color: lightgrey;
   height: 2.5px;
   border: 0px;
 }
@@ -385,6 +404,16 @@ input[type=checkbox] {
   color: #FFFFFF;
   background-color: #eaf1f5;
   font-size: 2em;
+
+}
+
+.chevron-styling:hover {
+  color: #1d9aed;
+}
+
+.fa-chevron-circle-up {
+  border: 2px solid lightgrey;
+  border-radius: 50px;
 }
 
 
