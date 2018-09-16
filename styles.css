@@ -114,7 +114,7 @@ input[type=checkbox] {
 
 .main {
   grid-column: 2 / span 1;
-  background-color: orangered;
+  background-color: #eaf1f5;
 }
 
 .navigation {
@@ -419,6 +419,7 @@ input[type=checkbox] {
 .job-description-and-widgets {
   display: grid;
   grid-template-columns: 1.8fr 1fr;
+  background-color: #eaf1f5;
 }
 
 .job-description-table-styling {
@@ -428,23 +429,19 @@ input[type=checkbox] {
   border: none;
 }
 
-.social-styling {
-  grid-column: 2;
-}
 
 .table-header {
-  background-color: grey;
+  background-color: #567183;
   color: white;
-  font-size: 1em;
+  font-size: .96em;
   font-weight: 400;
 }
 
-
 .edit-button {
   color: white;
-  background-color: #606062;
+  background-color: #7495ab;
   border: none;
-  padding: 5px;
+  padding: 8px 10px;
   margin-left: 13px;
 }
 
@@ -467,27 +464,37 @@ h3 {
 }
 
 .table-body {
-  background-color: #FFFFFF;
+  background-color: none;
 }
 
 .table-description {
   vertical-align: top;
-  padding: 28px 0;
+  padding: 28px 10px;
   font-size: .9em;
 }
 
-
 .photo-cell {
-      display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .boss-name {
-  padding-left: 16px;
+  padding-left: 4px;
+  display: inline;
 }
 
 .stewert-butterfield-image {
-  height: 60px;
+  height: 39px;
   border-radius: 80px;
+  margin: 10px;
+}
+
+.social-styling {
+  grid-column: 2;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
 }
