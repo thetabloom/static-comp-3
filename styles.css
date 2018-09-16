@@ -180,7 +180,7 @@ input[type=checkbox] {
 
 .header-title-and-buttons {
   display: grid;
-  grid-template-columns: 320px 1fr 290px;
+  grid-template-columns: 400px 1fr 290px;
   background-color: #FFFFFF;
 }
 
@@ -446,7 +446,7 @@ input[type=checkbox] {
 }
 
 .edit-button:hover {
-  background-color: #1d9aed
+  background-color: #1d9aed;
 }
 
 h3 {
@@ -471,6 +471,7 @@ h3 {
   vertical-align: top;
   padding: 28px 10px;
   font-size: .9em;
+  color: darkslateblue;
 }
 
 .photo-cell {
@@ -497,4 +498,32 @@ h3 {
 .social-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-button {
+  height: 50px;
+  width: 80%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.post-to {
+  padding-right: 60px;
+  font-size: 1.2em;
+}
+
+.facebook {
+  background-color: #4a6fc0;
+}
+
+.twitter {
+  background-color: #02a9ef;
+}
+
+.linkedin {
+  background-color: #0480bc;
 }
