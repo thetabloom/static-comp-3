@@ -180,7 +180,7 @@ input[type=checkbox] {
 
 .header-title-and-buttons {
   display: grid;
-  grid-template-columns: 320px 1fr 320px;
+  grid-template-columns: 320px 1fr 290px;
   background-color: #FFFFFF;
 }
 
@@ -217,7 +217,7 @@ input[type=checkbox] {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-  padding-right: 20px;
+  padding-right: 45px;
 }
 
 .header-btn {
@@ -232,7 +232,7 @@ input[type=checkbox] {
 }
 
 .header-button-one {
-  width: 75px;
+  width: 80px;
   color: #413a30;
   font-weight: 600;
 }
@@ -381,7 +381,7 @@ input[type=checkbox] {
 .page-divider {
   display: grid;
   grid-template-columns: 1fr 37px 1fr;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 }
 
 .divider-line-styling {
@@ -418,21 +418,76 @@ input[type=checkbox] {
 
 .job-description-and-widgets {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.8fr 1fr;
 }
 
-.job-description {
-  grid-column: 1 ;
-  border: 3px solid yellow;
+.job-description-table-styling {
+  margin-left: 20px;
+  background-color: white;
+  margin-bottom: 20px;
+  border: none;
 }
 
-.social-buttons-styling {
+.social-styling {
   grid-column: 2;
 }
 
+.table-header {
+  background-color: grey;
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+}
 
 
-.stewert-butterfield {
+.edit-button {
+  color: white;
+  background-color: #606062;
+  border: none;
+  padding: 5px;
+  margin-left: 13px;
+}
+
+.edit-button:hover {
+  background-color: #1d9aed
+}
+
+h3 {
+  float: left;
+  padding: 25px;
+}
+
+.table-title {
+  float: left;
+  padding: 29px 25px 0 25px;
+  font-size: .75em;
+  font-weight: 600;
+  margin-right: 20px;
+  width: 167px; 
+}
+
+.table-body {
+  background-color: #FFFFFF;
+}
+
+.table-description {
+  vertical-align: top;
+  padding: 28px 0;
+  font-size: .9em;
+}
+
+
+.photo-cell {
+      display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.boss-name {
+  padding-left: 16px;
+}
+
+.stewert-butterfield-image {
   height: 60px;
   border-radius: 80px;
 }
