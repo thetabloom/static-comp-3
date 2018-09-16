@@ -88,41 +88,42 @@
         </div>
 
       </nav>
-
-    <section class="header">
-      <p class="Title">Frontend Software Engineer<br>
-      <span class="town">
-      <i class="fas fa-map-marker-alt"></i>Denver, CO
-      </span>
-      <span class="dash">-</span>
-      <span class="preview-post"> Preview This Post<p>
-    </section>
-    <section class="header-buttons-styling">
-      <button class="header-button">
-      <i class="fas fa-circle">
-      </i>OPEN</button>
-      <button class="header-button">
-      <i class="fas fa-bookmark"></i>
-      </button>
-      <button class="header-button">
-      <i class="fas fa-pencil-alt"></i></button>
-      <button class="header-button">
-      <i class="fas fa-hotel"></i>
-      </button>
-    </section>
-
-    <section class="subnavigation-header-links">
-      <p class="subnav-link">SUMMARY</p>
-      <p class="subnav-link">APPLICANTS</p>
-      <p class="subnav-link">JOB BOARD</p>
-      <p class="subnav-link">INTERVIEWS</p>
-      <p class="subnav-link">ACTIVITY</p>
-      <p class="subnav-link">BROADCAST</p>
-      <p class="subnav-link">NOTIFICATIONS</p>
-    </section>
+    <div class="header-title-and-buttons">
+      <section class="header-title-styling">
+        <p class="header-title">Frontend Software Engineer</p>
+        <span class="header-town">
+        <i class="fas fa-map-marker-alt"></i> Denver, CO -
+        <span class="preview-post">Preview This Post</span>
+        </span>
+      </section>
+      <section class="header-buttons-styling">
+        <button class="header-button-one header-btn">
+        <i class="fas fa-circle ">
+        </i> OPEN</button>
+        <button class="header-button-small header-btn">
+        <i class="fas fa-bookmark"></i>
+        </button>
+        <button class="header-button-small header-btn">
+        <i class="fas fa-pencil-alt"></i></button>
+        <button class="header-button-small header-btn">
+        <i class="fas fa-hotel"></i>
+        </button>
+      </section>
+    </div>
+    <div class="subnav-links-styling">
+      <section class="subnavigation-header-links">
+        <p class="single-subnav-link">SUMMARY</p>
+        <p class="single-subnav-link">APPLICANTS</p>
+        <p class="single-subnav-link">JOB BOARD</p>
+        <p class="single-subnav-link">INTERVIEWS</p>
+        <p class="single-subnav-link">ACTIVITY</p>
+        <p class="single-subnav-link">BROADCAST</p>
+        <p class="single-subnav-link">NOTIFICATIONS</p>
+      </section>
+    </div>
 
     <section class="graphs">
-      <section class="circle-chart-styling">
+      <article class="circle-chart-styling">
 
         <div class="single-chart">
           <svg viewbox="0 0 36 36" class="circular-chart teal">
@@ -172,18 +173,23 @@
           </svg>
         </div>
 
-      </section><!-- circle chart styling -->
+      </article><!-- circle chart styling -->
 
-      <section class="bars">
-      </section>
+      <div class="bar-graph">
+      </div>
+
     </section><!-- graphs section -->
 
-    <section class="buttons-for-graphs">
-      <button class="totals">TOTALS - Out of 5231 views</button>
-      <button class="applicants-day">APPLICANTS/DAY</button>
+    <section class="buttons-for-graphs-container">
+      <div class="graph-button-styling">
+      <button class="totals-button graph-button">TOTALS - Out of 5,231 views</button>
+      </div>
+      <div class="graph-button-styling">
+      <button class="applicants-per-day-button graph-button">APPLICANTS/DAY</button>
+      </div>
     </section>
 
-    <section class="divider-icon">
+    <section class="page-divider">
       <hr class="divide-before">
       <span>
       <i class="fas fa-chevron-circle-up"></i></i>
@@ -191,7 +197,7 @@
       <hr class="divide-after">
     </section>
 
-    <div class="jobpost-table">
+    <!-- <div class="jobpost-table"> -->
     <section class="job-description">
       <h1 class="job-table-header">
       <p class="jay-oh-bee">JOB DESCRIPTION</p> 
@@ -244,24 +250,24 @@
     <section class="social-buttons-styling">
       <article class="social-container">
         <button class="facebook"type="button">
-        <i class="fab fa-facebook-f">
-        </i>
-        <p class="post-to">Post to Facebook</p>
+          <i class="fab fa-facebook-f">
+          </i>
+          <p class="post-to">Post to Facebook</p>
         </button>
         <button class="twitter"type="button">
-        <i class="fab fa-twitter"></i>
-        <p class="post-to">Tweet this Job</p>
+          <i class="fab fa-twitter"></i>
+          <p class="post-to">Tweet this Job</p>
         </button>
         <button class="linkedin"type="button">
-        <i class="fab fa-linkedin"></i>
-        <p class="post-to">Post to LinkedIn</p>
+          <i class="fab fa-linkedin"></i>
+          <p class="post-to">Post to LinkedIn</p>
         </button>
       </article>
   
       <article class="share">
         <div class="copy-input">
           <h2 class="share-title">
-          <i class="fas fa-globe-americas"></i>
+            <i class="fas fa-globe-americas"></i>
             Link to this Job
           </h2>
             <p class="share-text">Tart bonbon tiramisu candy macaroon. Ice-cream danish biscuit donut jelly bearclaw liquorice.</p>
@@ -269,7 +275,7 @@
           <div class="copy-widget">
             <input class="copy-text" type="text" 
               placeholder="www.google.com">
-          <button class="copy-btn" type="button">Copy</button>
+            <button class="copy-btn" type="button">Copy</button>
           </div>
           <hr class="social-container-divider">
           </div>
@@ -290,15 +296,16 @@
           </div>
           <div class="copy-input">
             <h2 class="share-title">
-            <i class="fas fa-paper-plane"></i>
+              <i class="fas fa-paper-plane"></i>
               Upload Resumes by Email
             </h2>
-            <p class="share-text">Marzipan candy carrot cake danish icing tiramisu jujubes chupa chups carrot cake. 
+            <p class="share-text"> Marzipan candy carrot cake danish icing tiramisu jujubes chupa chups carrot cake. 
             </p>
             <input class="copy-text-resume" type="text" 
             placeholder="thetabloom1@gmail.com">
           </div>
-        </article>
-      </section>
-    </body>
+        </div>
+      </article>
+    </section>
+  </body>
 </html>

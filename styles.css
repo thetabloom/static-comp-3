@@ -66,7 +66,7 @@ hr {
 
 .sidebar-link-button:hover {
   background-color: #3a4854;
-  border-left: 1.5px solid cyan;
+  border-left: 1.5px solid #1d9aed;
   color: white;
 }
 
@@ -119,8 +119,9 @@ input[type=checkbox] {
 .navigation {
   display: grid;
   grid-template-columns: 5em 1fr 5em 5em 5em;
-  background-color: whitesmoke;
+  background-color: #FFFFFF;
   height: 75px;
+  border-bottom: 2px solid lightgrey;
 }
 
 .collapse {
@@ -129,11 +130,13 @@ input[type=checkbox] {
 }
 
 .fa-caret-left {
-  color: #41e6fd;
+  color: #1d9aed;
 }
+
 
 .fa-bars {
   padding-left: 3px;
+  margin-right: 6px;
 }
 
 .search {
@@ -143,12 +146,16 @@ input[type=checkbox] {
   border: none;
   border-radius: 4px;
   font-size: 16px;
-  background-color: white;
+  background-color: #FFFFFF;
   background-image: url('images/searchicon.png');
-  background-position: 10px 28px;
+  background-position: 19px 28px;
   background-repeat: no-repeat;
-  padding: 12px 16px 12px 40px;
-  height: 75px;
+  padding: 12px 16px 12px 50px;
+  height: 73px;
+}
+
+.search:hover {
+  background-color: white;
 }
 
 .search::placeholder {
@@ -159,32 +166,125 @@ input[type=checkbox] {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: 2px solid grey;
+  border-right: 1px solid lightgrey;
+  border-left: 2px solid lightgrey;
+  color: darkgrey;
+  font-size: 1.17em;
+}
+
+.nav-icon:hover {
+  background-color: silver;
+  color: white;
+}
+
+.header-title-and-buttons {
+  display: grid;
+  grid-template-columns: 320px 1fr 320px;
+  background-color: #FFFFFF;
+}
+
+.header-title-styling {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-left: 51px;
+  color: #262626;
+  line-height: 2em;
+}
+
+.header-title {
+  font-size: 1.5em;
+}
+
+.header-town {
+  color: grey;
+  letter-spacing: .2px;
+}
+
+.preview-post {
+  color: #1d9aed;
+}
+
+.header-buttons-styling {
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 20px;
+}
+
+.header-btn {
+  border-radius: 20px;
+  height: 35px;
+  border: 1.45px solid #b8baba;
+}
+
+.header-button-one {
+  width: 75px;
+  color: #413a30;
+  font-weight: 600;
+}
+
+.fa-circle {
+  color: #1bec2b;
+}
+
+.header-button-small {
+  width: 35px;
+  color: #b8baba;
+}
+
+.subnav-links-styling {
+  display: grid;
+  grid-template-columns: 1000px 1fr;
+  background-color: #FFFFFF;
+  padding-top: 20px;
+}
+
+.subnavigation-header-links {
+  grid-column: 1;
+  display: flex;
+  justify-content: space-around;
+  color: grey;
+  padding-left: 26px;
+}
+
+.single-subnav-link {
+  padding: 10px 0 10px 0;
+  border-bottom: 3px solid #FFFFFF;
+  font-size: .9em;
+  line-height: 27px;
+}
+
+.single-subnav-link:hover {
+  border-bottom: 3px solid #1d9aed;
+  color: #606062;
 }
 
 .graphs {
+  background-color: #eaf1f5;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border-top: 2px solid lightgrey;
 }
 
-.dials-wrapper { 
-}
-
-.dials {
-  grid-column: 1 / span 1;
-  width: 6em;
-  border: 3px solid black;
+.circle-chart-styling {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .single-chart {
-  height: 100px;
+  width: 33%;
+  justify-content: space-around ;
 }
 
 .circular-chart {
   display: block;
-  margin: 2em 1em 1em 1em;
+  margin: 10px auto;
   max-width: 80%;
-  max-height: 10em;
+  max-height: 250px;
 }
 
 .circle-bg {
@@ -194,10 +294,10 @@ input[type=checkbox] {
 }
 
 .circle {
-  animation: progress 1s ease-out forwards;
   fill: none;
   stroke-width: 2.8;
   stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
 }
 
 @keyframes progress {
@@ -230,12 +330,43 @@ input[type=checkbox] {
   font-weight: 700;
 }
 
-.bars {
+.bar-graph {
   grid-column: 2 / span 1;
-  border: 3px solid yellow;
+  background-image: url('images/graphbar.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  padding-left: 77px;
+  background-position: center;
 }
 
+.buttons-for-graphs-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 0;
+  background-color: #eaf1f5;
+}
+
+.graph-button-styling {
+  display: flex;
+  justify-content: center;
+}
+
+.graph-button {
+  height: 35px;
+  border-radius: 20px;
+  padding: 10px;
+  color: #606062;
+  font-weight: 600;
+}
+
+
+}
+
+
+
+
 .stewert-butterfield {
-  height: 70px;
+  height: 60px;
   border-radius: 80px;
 }
