@@ -343,7 +343,7 @@ input[type=checkbox] {
 .buttons-for-graphs-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 10px 0;
+  padding: 10px 0 37px;
   background-color: #eaf1f5;
 }
 
@@ -360,10 +360,32 @@ input[type=checkbox] {
   font-weight: 600;
 }
 
-
+.page-divider {
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr;
 }
 
+.divider-line-styling {
+  display: flex;
+  justify-content: center;
+  padding-top: 14px;
+  background-color: #eaf1f5;
+}
 
+.divider-line {
+  width: 85%;
+  background-color: grey;
+  height: 2.5px;
+  border: 0px;
+}
+
+.chevron-styling {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  background-color: #eaf1f5;
+  font-size: 2em;
+}
 
 
 .stewert-butterfield {
